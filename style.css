@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f9f9f9;
+}
+.nav{
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    display: flex;
+    font-size: 1.7rem;
+    height: auto;
+    justify-content: space-between;
+    left: 0;
+    padding: 25px 40px 25px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+.nav .left h2{
+    font-size: 18px;
+    font-weight: 700;
+    color: #2d2e32;
+}
+
+.nav .anchor{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.nav .anchor a{
+    text-decoration: none;
+    color: #2d2e32;
+    font-size: 17px;
+    font-weight: 550;
+    position: relative;
+    padding: 0 10px;
+    border-bottom: 1px solid w;
+}
+
+nav .anchor a:hover{
+    color: #147efb;
+}
+
+
+
+.nav .anchor a:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: .5s;
+    background-color: #147efb;
+
+}
+
+.nav a:hover:after{
+    width: 100%;
+}
+
+
+section.content.wrapper .flex{
+    margin: 220px auto;
+    display: flex;
+    gap: 200px;
+    width: 100%;
+    max-width: 900px;
+}
+
+
+
+section .right-side img{
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.9);
+    outline: none;
+    border: none;
+}
+
+section h1{
+    font-size: 2.5rem;
+    font-weight: 750;
+    color: #2d2e32;
+}
+
+section p{
+    margin-top: 1.5rem;
+    color: gray;
+}
+
+section .icons a i{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+section .icons{
+    display: flex;
+    gap: 15px;
+}
+
+section.content.wrapper .skills{
+    margin: -60px auto;
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    max-width: 900px;
+}
+
+section .skills h5{
+    border-right: 2px solid rgba(45,46,50,.5);
+    color: #2d2e32;
+    font-family: 'Mulish' ,sans-serif;
+    font-weight: 600;
+    margin-right: 7rem;
+    padding-right: 2rem;
+    margin-top: 20px;
+    font-size: 1.5rem;
+
+}
+
+section .skills .images{
+    display: flex;
+    gap: 40px;
+    font-size: 2.5rem;
+}
+
+section.about-me.wrapper{
+    margin: 360px auto;
+    display: flex;
+    gap: 60px;
+    width: 100%;
+    max-width: 900px;
+}
+
+section.about-me .image img{
+    width: 400px;
+    height: 380px;
+    border-radius: 17px;
+}
+
+section.about-me .about-text h6{
+    color: #147efb;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+section.about-me .about-text h5{
+    color:#2d2e32;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+section.about-me .about-text p{
+    text-align: justify;
+    line-height: 25px;
+}
+
+section.portfolio.wrapper{
+    margin: 240px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 90%;
+    max-width: 900px;
+}
+
+section.portfolio .text-port h6{
+    color: #147efb;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+section.portfolio .text-port h4{
+    color: #2d2e32;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+section.portfolio .first-project img{
+    width: 450px;
+    height: 320px;
+}
+
+section.portfolio .first-project{
+    display: flex;
+    gap: 60px;
+}
+
+section.portfolio .first-project .text h4{
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+section.portfolio .first-project .text .lang  {
+    display: flex;
+    justify-content: space-around;
+}
+
+section.portfolio .first-project .text .lang i {
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+section.portfolio .first-project .demo{
+    display: flex;
+    justify-content: space-around;
+}
+
+section.portfolio .first-project .text p{
+    text-align: justify;
+}
+
+section.portfolio .first-project .demo b{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.first-project .text p{
+    line-height: 25px;
+}
+
+.first-project .text h4{
+    font-size: 1.2rem;
+    color: #2d2e32;
+}
+
+.content.wrapper .skills .images i:hover{
+    transform: translateY(-20px);
+    transition: .5s;
+}
+
+section.contact.wrapper{
+    margin: 340px auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+section.contact h4{
+    color: #147efb;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+section.contact h3{
+    color: #2d2e32;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.contact.wrapper .location .first{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+section.contact .location{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.contact .location .contact{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+section.contact .contact i{
+    color: #147efb;
+    font-size: 25px;
+}
+
+section.contact .head{
+    font-size: 1.5rem;
+    font-weight: 800;
+    
+}
+
+section.contact .bottom{
+    margin-top: 10px;
+    color: #767676;
+    font-size: 1.2rem;
+}
+
+section.contact .bottom:hover, section.contact .bottom a:hover{
+    color:#147efb ;
+}
+
+section.contact .bottom a{
+    text-decoration: none;
+    color: #767676;
+}
+
+footer{
+    background: #2d2e32;
+    width: 100%;
+    height: 150px;
+}
+
+footer .container{
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 3rem 0;
+}
+
+footer .container .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container .wrapper h5{
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top:22px;
+}
+
+footer .container .wrapper .icons a i{
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 30px;
+}
+
+
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -30%;
+    background-color: #147efb;
+    display: inline-flex;
+    padding: .35rem;
+    color: #2d2e32;
+    font-size: 1.25rem;
+    z-index: 199;
+    transition: .3s;
+}
+
+.scrollup:hover{
+    transform: translateY(-.25rem);
+}
+
+.show-scroll{
+    bottom: 3rem;
+    transition: .6s;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Cursor */
+.cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+}
+
+.cursor-outline{
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
