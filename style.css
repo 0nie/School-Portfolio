@@ -100,13 +100,19 @@ section p{
 
 section .icons a i{
     margin-top: 30px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: black;
+    transition: .5s;
 }
 
 section .icons{
     display: flex;
     gap: 15px;
+}
+
+section.content .icons a i:hover{
+    color: #147efb;
+    transform: translateY(-7px);
 }
 
 section.content.wrapper .skills{
@@ -163,7 +169,7 @@ section.about-me .about-text h5{
 
 section.about-me .about-text p{
     text-align: justify;
-    line-height: 25px;
+    line-height: 37px;
 }
 
 section.portfolio.wrapper{
@@ -188,8 +194,8 @@ section.portfolio .text-port h4{
 }
 
 section.portfolio .first-project img{
-    width: 450px;
-    height: 320px;
+    width: 470px;
+    height: 350px;
 }
 
 section.portfolio .first-project{
@@ -209,17 +215,19 @@ section.portfolio .first-project .text .lang  {
 }
 
 section.portfolio .first-project .text .lang i {
-    font-size: 25px;
+    font-size: 28px;
     margin-top: 25px;
 }
 
 section.portfolio .first-project .demo{
     display: flex;
     justify-content: space-around;
+   
 }
 
 section.portfolio .first-project .text p{
     text-align: justify;
+    line-height: 30px;
 }
 
 section.portfolio .first-project .demo b{
@@ -227,10 +235,26 @@ section.portfolio .first-project .demo b{
     font-weight: 700;
 }
 
+section.portfolio .first-project .demo b a i{
+    font-size: 23px;
+    color: #2d2e32!important;
+    transition: 0.5s;
+}
+
+section.portfolio .first-project .demo b a i:hover{
+   color: #147efb!important; ;
+   transform: translateY(-5px);
+
+}
+
 .first-project .text p{
     line-height: 25px;
 }
 
+::selection{
+    color: #f9f9f9;
+    background: #2d2e32;
+}
 .first-project .text h4{
     font-size: 1.2rem;
     color: #2d2e32;
